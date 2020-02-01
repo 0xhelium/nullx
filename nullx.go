@@ -5,10 +5,10 @@ import (
 	"unicode/utf8"
 )
 
-func strlen(str string) int {
+func Strlen(str string) int {
 	return utf8.RuneCountInString(str)
 }
 
-func strrpt(str string, rpt int) string {
+func Strrpt(str string, rpt int) string {
 	return strings.Repeat(str, rpt)
 }
