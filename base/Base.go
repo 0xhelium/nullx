@@ -2,7 +2,7 @@ package base
 
 import (
 	"bytes"
-	"github.com/bill13579/nullx/bit"
+	"github.com/0xhelium/nullx/bit"
 )
 
 const BASE64_CHARSET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
