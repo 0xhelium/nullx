@@ -64,12 +64,13 @@ func (socket *ISocket) ReadUntil(b *[]byte, key []byte) (n int, err error) {
 		if firstByte {
 			firstByte = false;
 		} else {
-			if streak >= len(key) {
-				return false
-			} else if key[streak] == chunk[0] {
+			if key[streak] == chunk[0] {
 				streak++
 			} else {
 				streak = 0
+			}
+			if streak >= len(key) {
+				return false
 			}
 		}
 		lastByte = chunk[0]
